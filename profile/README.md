@@ -28,7 +28,7 @@ SYNAPSNEX is an independent technology organization focused on developing softwa
 
 Source code, documentation, and development:
 
-**[github.com/SYNAPSNEX](https://github.com/SYNAPSNEX)**
+**[github.com/SYNAPSNEX](https://github.com/SYNAPSEX-official)**
 
 ## `~/connect`
 
