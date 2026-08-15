@@ -32,7 +32,9 @@ Source code, documentation, and development:
 
 ## `~/connect`
 
-**[Website](https://synapsnex.vercel.app)** · **[GitHub](https://github.com/SYNAPSNEX)**
+<a href="https://github.com/SYNAPSEX-official">
+  <img src="https://cdn.simpleicons.org/github/white" width="28" />
+</a>
 
 ```text
 $ echo "build > talk"
