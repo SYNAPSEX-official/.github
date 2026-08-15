@@ -6,7 +6,8 @@
 
 ## Notable work
 
-### Nexus5
+### Nexus
+A novel neural network architecture focused on compute efficiency, faster learning, and complex general-purpose reasoning.
 [Github](https://github.com/matheeshaRanasinghe/nexu5)
 
 ### Tuxctl
