@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "saiba-45";
+  src: url("Fonts/saiba'45/SAIBA-45.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+.hero {
+  text-align: center;
+}
+
+h1.logo {
+  padding: 15vh;
+  padding-bottom: 1vh;
+  margin: 0;
+  font-size: 12vw;
+  font-family: "saiba-45", "Courier New", Courier, monospace;
+}
+
+p {
+  font-family: "Orbitron", sans-serif;
+}
