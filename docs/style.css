@@ -1,4 +1,4 @@
-/* ------------ FONTS ------------------ */
+/* ------------ FONTS ---------------- */
 @font-face {
     font-family: 'saiba-45';
     src: url('Fonts/saiba\'45/SAIBA-45.ttf') format('truetype');
@@ -10,7 +10,7 @@
     font-weight: 100 900;
 }
 
-/* -----------VAR ------------------------- */
+/* -----------VAR ------------------ */
 :root {
     --bg: #0a0c0e;
     --surface: #0f1216;
@@ -72,7 +72,7 @@ svg {
     outline-offset: 3px;
 }
 
-/* ---------- 3. Base ---------- */
+/* ---------- BASE ---------- */
 .container {
     width: 100%;
     max-width: var(--container);
@@ -80,7 +80,7 @@ svg {
     padding-inline: clamp(1.25rem, 4vw, 2.5rem);
 }
 
-/* ---------- 4. Header / nav ---------- */
+/* ---------- NAV ---------- */
 .site-header {
     position: sticky;
     top: 0;
@@ -138,7 +138,7 @@ svg {
     color: var(--accent);
 }
 
-/* ---------- 5. Hero ---------- */
+/* ---------- HERO ---------- */
 .hero {
     min-height: 92vh;
     display: flex;
@@ -201,7 +201,7 @@ svg {
     }
 }
 
-/* ---------- 6. Section scaffolding ---------- */
+/* ---------- SECTION ---------- */
 .section {
     padding-block: clamp(4rem, 10vh, 7rem);
     border-bottom: 1px solid var(--border);
@@ -233,7 +233,7 @@ svg {
     margin-bottom: 2.5rem;
 }
 
-/* ---------- 7. About ---------- */
+/* ---------- ABOUT ---------- */
 .about p {
     max-width: 70ch;
     font-size: clamp(1.05rem, 1.6vw, 1.2rem);
@@ -241,7 +241,7 @@ svg {
     margin-bottom: 1.25rem;
 }
 
-/* ---------- 8. Areas ---------- */
+/* ---------- AREAS ---------- */
 .areas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
@@ -283,7 +283,7 @@ svg {
     margin: 0;
 }
 
-/* ---------- 9. Notable Work ---------- */
+/* ---------- NOTABLE WORK ---------- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
@@ -347,7 +347,7 @@ svg {
     text-decoration: none;
 }
 
-/* ---------- 10. Achievements ---------- */
+/* ---------- ACHIVEMENTS ---------- */
 .achievements-list {
     list-style: none;
     display: grid;
@@ -392,7 +392,7 @@ svg {
     margin: 0;
 }
 
-/* ---------- 11. Footer ---------- */
+/* ---------- FOOTER ---------- */
 .footer {
     padding-block: 3.5rem;
 }
@@ -430,7 +430,8 @@ svg {
     text-decoration: none;
 }
 
-/* ---------- 12. Media queries ---------- */
+/* ------------ RESPONSIVE -------------*/
+
 @media (max-width: 768px) {
     .nav {
         gap: 0.25rem 1rem;
@@ -482,6 +483,7 @@ svg {
         gap: 0.5rem;
     }
 }
+
 
 /* ---------- 13. Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
