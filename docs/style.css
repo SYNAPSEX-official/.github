@@ -1,60 +1,69 @@
 :root {
-    --bg: #070A12;
-    --surface: #0e13206c;
+        --bg: #070a12;
+        --surface: #0e13206c;
 
-    --text: #F4F7FB;
-    --primary: #00D9FF;
-    --secondery: #8B5CF6;
+        --text: #f4f7fb;
+        --primary: #00d9ff;
+        --secondery: #8b5cf6;
 }
 @font-face {
-    font-family: cyba-45;
-    src: url('fonts/saiba\'45/SAIBA-45.ttf');
+        font-family: cyba-45;
+        src: url("fonts/saiba'45/SAIBA-45.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 }
 html {
-    background-color: var(--bg);
-    color: var(--text);
+        background-color: var(--bg);
+        color: var(--text);
 }
 
 /* NAV */
 nav {
-    width: 100%;
-    padding: 1rem 5%;
-    background-color: var(--surface);
-    border-bottom: 2px solid var(--secondery);
-    backdrop-filter: blur(15px);
-    margin-bottom: 2rem;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        padding: 1rem 5%;
+        background-color: var(--surface);
+        border-bottom: 2px solid var(--secondery);
+        backdrop-filter: blur(15px);
+        margin-bottom: 2rem;
 }
 .nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
 }
 .nav-links li a {
-    text-decoration: none;
-    color: var(--text);
+        text-decoration: none;
+        color: var(--text);
 }
 h1.name {
-    margin-top: 30vh;
-    font-size: clamp(2rem, min(20vh, 15vw), 12rem);
-    text-align: center;
-    font-family: 'cyba-45' ,'Courier New', Courier, monospace;
+        margin-top: 30vh;
+        font-size: clamp(2rem, min(20vh, 15vw), 12rem);
+        text-align: center;
+        font-family: "cyba-45", "Courier New", Courier, monospace;
 }
-/* .hero {
-    background-color: var(--secondery);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    clip-path: polygon(
-        0% 0%,
-        100% 0%,
-        100% 100%,
-        0% 100%
-    );
-} */
+
+.hero {
+        z-index: 1;
+        background-image: url("1348663.jpeg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--secondery);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+        z-index: -2;
+}
