@@ -46,6 +46,7 @@ h1.name {
         font-size: clamp(2rem, min(20vh, 15vw), 12rem);
         text-align: center;
         font-family: "cyba-45", "Courier New", Courier, monospace;
+        -webkit-text-stroke: 2px var(--secondery);
 }
 
 .hero {
@@ -59,11 +60,15 @@ h1.name {
         top: 0;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
-.hero::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: var(--secondery);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-        z-index: -2;
+.hero-border {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-border line {
+    stroke: var(--secondery);
+    stroke-width: 1;
+    fill: none;
 }
