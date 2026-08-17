@@ -6,6 +6,10 @@
     --primary: #00D9FF;
     --secondery: #8B5CF6;
 }
+@font-face {
+    font-family: cyba-45;
+    src: url('fonts/saiba\'45/SAIBA-45.ttf');
+}
 
 * {
     margin: 0;
@@ -34,4 +38,10 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: var(--text);
+}
+h1.name {
+    margin-top: 30vh;
+    font-size: clamp(2rem, min(20vh, 15vw), 12  rem);
+    text-align: center;
+    font-family: 'cyba-45' ,'Courier New', Courier, monospace;
 }
