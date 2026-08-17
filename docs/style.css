@@ -41,7 +41,20 @@ nav {
 }
 h1.name {
     margin-top: 30vh;
-    font-size: clamp(2rem, min(20vh, 15vw), 12  rem);
+    font-size: clamp(2rem, min(20vh, 15vw), 12rem);
     text-align: center;
     font-family: 'cyba-45' ,'Courier New', Courier, monospace;
 }
+/* .hero {
+    background-color: var(--secondery);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        0% 100%
+    );
+} */
