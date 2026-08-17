@@ -8,6 +8,11 @@
                 />
                 <title>SYNAPSNEX</title>
                 <link rel="stylesheet" href="style.css" />
+
+                <link
+                        rel="stylesheet"
+                        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+                />
         </head>
         <body>
                 <nav>
@@ -25,14 +30,60 @@
                         </div>
                 </nav>
                 <div class="hero">
-                        <svg
-                                class="hero-border"
-                                viewBox="0 0 100 100"
-                                preserveAspectRatio="none"
-                        >
-                                <line x1="0" y1="80" x2="100" y2="100" />
-                        </svg>
                         <h1 class="name">SYNAPSNEX</h1>
                 </div>
+                <div class="moments">
+                        <h1>[001] MOMENTS</h1>
+                         <div class="swiper moments-stack">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img
+                                src="1348663.jpeg"
+                                alt="SYNAPSNEX team at an event"
+                            >
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="1348663.jpeg"
+                                alt="SYNAPSNEX team at a competition"
+                            >
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="1348663.jpeg"
+                                alt="SYNAPSNEX team meetup"
+                            >
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="1348663.jpeg"
+                                alt="SYNAPSNEX team at a game jam"
+                            >
+                        </div>
+
+                </div>
+                </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script>
+                    const moments = new Swiper(".moments-stack", {
+                    effect: "cards",
+
+                    grabCursor: true,
+
+                    loop: true,
+
+                    cardsEffect: {
+                        perSlideOffset: 8,
+                        perSlideRotate: 2,
+                        slideShadows: false,
+                    },
+                });
+                </script>
         </body>
 </html>
