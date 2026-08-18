@@ -100,3 +100,24 @@ h1.name {
         border-radius: 20px;
         border: 1px solid var(--secondery);
 }
+
+footer {
+        margin-top: 10vh;
+        padding: 4rem 5% 2rem;
+
+        background: var(--surface);
+        border-top: 1px solid var(--secondery);
+
+        backdrop-filter: blur(15px);
+        display: flex;
+        justify-content: space-between;
+}
+
+footer .copyright {
+        margin-left: 5vh;
+}
+footer a {
+        color: var(--text);
+        margin-right: 5vh;
+        text-decoration: none;
+}

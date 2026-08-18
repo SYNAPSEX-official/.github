@@ -8,6 +8,7 @@
                 />
                 <title>SYNAPSNEX</title>
                 <link rel="stylesheet" href="style.css" />
+                <link rel="icon" type="image/jpg" href="images/logo.jpg" />
 
                 <link
                         rel="stylesheet"
@@ -34,44 +35,46 @@
                         <p>CODE. BREAK. WHILE LOOP.</p>
                 </div>
                 <div class="moments">
-                        <h1>[001] MOMENTS</h1>
-                         <div class="swiper moments-stack">
+                        <h1>MOMENTS</h1>
+                        <div class="swiper moments-stack">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img
+                                                        src="images/1.jpg"
+                                                        alt="SYNAPSNEX team at an event"
+                                                />
+                                        </div>
 
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <img
-                                src="images/1.jpg"
-                                alt="SYNAPSNEX team at an event"
-                            >
+                                        <div class="swiper-slide">
+                                                <img
+                                                        src="images/2.jpeg"
+                                                        alt="SYNAPSNEX team at a competition"
+                                                />
+                                        </div>
+                                </div>
                         </div>
+                </div>
 
-                        <div class="swiper-slide">
-                            <img
-                                src="images/2.jpeg"
-                                alt="SYNAPSNEX team at a competition"
-                            >
-                        </div>
+                <footer>
+                        <span class="copyright">© 2026 SYNAPSNEX</span>
+                        <a href="https://github.com/SYNAPSNEX-official">GitHub <span>↗</span></a>
+                </footer>
 
-                </div>
-                </div>
-                </div>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                 <script>
-                    const moments = new Swiper(".moments-stack", {
-                    effect: "cards",
+                        const moments = new Swiper(".moments-stack", {
+                                effect: "cards",
 
-                    grabCursor: true,
+                                grabCursor: true,
 
-                    loop: true,
+                                loop: true,
 
-                    cardsEffect: {
-                        perSlideOffset: 8,
-                        perSlideRotate: 2,
-                        slideShadows: false,
-                    },
-                });
+                                cardsEffect: {
+                                        perSlideOffset: 8,
+                                        perSlideRotate: 2,
+                                        slideShadows: false,
+                                },
+                        });
                 </script>
         </body>
-        
 </html>
