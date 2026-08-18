@@ -23,6 +23,22 @@
 html {
         background-color: var(--bg);
         color: var(--text);
+        transition: transform 0.2s ease;
+}
+body {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(138, 92, 246, 0.4) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(138, 92, 246, 0.4) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
 }
 
 /* NAV */
@@ -50,7 +66,7 @@ h1.name {
         font-size: clamp(2rem, min(20vh, 15vw), 10rem);
         text-align: center;
         font-family: "cyba-45", "Courier New", Courier, monospace;
-        -webkit-text-stroke: 2px var(--secondery);
+        -webkit-text-stroke: 3px var(--secondery);
 }
 
 .hero {
@@ -98,15 +114,16 @@ h1.name {
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
-        border: 1px solid var(--secondery);
+        border: 2px solid var(--secondery);
 }
 
+/* FOOTER */
 footer {
         margin-top: 10vh;
         padding: 4rem 5% 2rem;
 
         background: var(--surface);
-        border-top: 1px solid var(--secondery);
+        border-top: 2px solid var(--secondery);
 
         backdrop-filter: blur(15px);
         display: flex;
@@ -120,4 +137,78 @@ footer a {
         color: var(--text);
         margin-right: 5vh;
         text-decoration: none;
+}
+
+/* WORK */
+.notable-work {
+        position: relative;
+        width: 90%;
+        max-width: 1400px;
+        margin: 15vh auto 0;
+        padding: 5vh 0;
+}
+.section-heading {
+        margin-bottom: 8vh;
+}
+.section-heading span {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        color: var(--primary);
+        font-weight: 900;
+}
+.section-heading h2 {
+        margin-bottom: 0.5rem;
+        font-size: clamp(2rem, 6vw, 5rem);
+        font-family: 'cyba-45', 'Courier New', Courier, monospace;
+}
+.work-item {
+        display: grid;
+        grid-template-columns: 60px 1.3fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        margin: 10vh;
+        padding: 5vh;
+        border-radius: 20px;
+        border: 2px solid var(--secondery);
+        background-color: #0e1320;
+}
+.work-type {
+        background-color: var(--primary);
+        padding: .2rem;
+        border-radius: 5px;
+        color: var(--bg);
+        font-weight: 900;
+}
+.work-number {
+        align-self: start;
+        font-family: 'cyba-45', 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        opacity: .7;
+        color: var(--secondery);
+}
+.work-item {
+        font-size: .85rem;
+        letter-spacing: 0.15rem;
+        color: var(--primary);
+}
+.work-info h3 {
+        margin: .7rem 0;
+        font-size: clamp(1.8rem, 4vw, 3.5rem);
+        
+
+}
+.work-info p {
+        max-width: 500px;
+        line-height: 1.7;
+        opacity: 0.7;
+}
+.work-info a {
+        position: relative;
+        top: 1vh;
+        color: var(--text);
+        text-decoration: none;
+        padding: 2vh;
+}
+.work-info a:hover {
+        transform: translate(3px, -3px);
 }

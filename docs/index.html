@@ -2,31 +2,21 @@
 <html lang="en">
         <head>
                 <meta charset="UTF-8" />
-                <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1.0"
-                />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>SYNAPSNEX</title>
+
                 <link rel="stylesheet" href="style.css" />
                 <link rel="icon" type="image/jpg" href="images/logo.jpg" />
-
-                <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-                />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         </head>
         <body>
                 <nav>
                         <div class="logo">
                                 <ul class="nav-links">
-                                        <li class="active">
-                                                <a href="./">Home</a>
-                                        </li>
+                                        <li class="active"><a href="./">Home</a></li>
                                         <li><a href="./work/">Work</a></li>
                                         <li><a href="./team/">Team</a></li>
-                                        <li>
-                                                <a href="./contact/">Contact</a>
-                                        </li>
+                                        <li><a href="./contact/">Contact</a></li>
                                 </ul>
                         </div>
                 </nav>
@@ -57,7 +47,9 @@
 
                 <footer>
                         <span class="copyright">© 2026 SYNAPSNEX</span>
-                        <a href="https://github.com/SYNAPSNEX-official">GitHub <span>↗</span></a>
+                        <a href="https://github.com/SYNAPSNEX-official"
+                                >GitHub <span>↗</span></a
+                        >
                 </footer>
 
                 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -66,12 +58,18 @@
                                 effect: "cards",
 
                                 grabCursor: true,
-
                                 loop: true,
 
+                                speed: 500,
+
+                                keyboard: {
+                                        enabled: true,
+                                },
+
                                 cardsEffect: {
-                                        perSlideOffset: 8,
-                                        perSlideRotate: 2,
+                                        perSlideOffset: 10,
+                                        perSlideRotate: 3,
+                                        rotate: true,
                                         slideShadows: false,
                                 },
                         });
