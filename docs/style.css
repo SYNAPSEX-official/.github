@@ -84,6 +84,7 @@ h1.name {
         padding-top: 25vh;
         font-size: 5vh;
         z-index: 2;
+        pointer-events: none;
 }
 
 .moments-stack {
