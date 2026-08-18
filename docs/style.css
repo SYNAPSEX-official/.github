@@ -212,3 +212,10 @@ footer a {
 .work-info a:hover {
         transform: translate(3px, -3px);
 }
+.team {
+        position: relative;
+        width: 90%;
+        max-width: 1400px;
+        margin: 15vh auto 0;
+        padding: 5vh 0;
+}
