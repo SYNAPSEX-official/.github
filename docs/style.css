@@ -277,6 +277,7 @@ footer a {
         transition: all 0.2s ease;
 }
 .role-heading {
+        margin-top: 7vh;
         font-family: 'cyba-45', 'Courier New', Courier, monospace;
         text-align: center;
         font-size: 4vh;
