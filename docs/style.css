@@ -1,6 +1,6 @@
 :root {
         --bg: #070a12;
-        --surface: #0e13206c;
+        --surface: #0e1320;
 
         --text: #f4f7fb;
         --primary: #00d9ff;
@@ -29,12 +29,12 @@ body {
     background-image:
         linear-gradient(
             to right,
-            rgba(138, 92, 246, 0.4) 1px,
+            #00d9ff66 1px,
             transparent 1px
         ),
         linear-gradient(
             to bottom,
-            rgba(138, 92, 246, 0.4) 1px,
+            #00d9ff66 1px,
             transparent 1px
         );
 
@@ -66,7 +66,7 @@ h1.name {
         font-size: clamp(2rem, min(20vh, 15vw), 10rem);
         text-align: center;
         font-family: "cyba-45", "Courier New", Courier, monospace;
-        -webkit-text-stroke: 3px var(--secondery);
+        -webkit-text-stroke: 3px var(--primary);
 }
 
 .hero {
@@ -114,7 +114,7 @@ h1.name {
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
-        border: 2px solid var(--secondery);
+        border: 3px solid var(--secondery);
 }
 
 /* FOOTER */
@@ -212,10 +212,255 @@ footer a {
 .work-info a:hover {
         transform: translate(3px, -3px);
 }
+
+
 .team {
         position: relative;
         width: 90%;
         max-width: 1400px;
         margin: 15vh auto 0;
         padding: 5vh 0;
+}
+.member-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(280px, 400px));
+        justify-content: center;
+        gap: 24px;
+        margin-top: 4vh;
+}
+.member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 28px;
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid var(--secondery);
+        background-color: var(--surface);
+}
+.areas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 16px;
+        font-size: 12px;
+}
+.areas span::before {
+        content: "▸ ";
+}
+.lead {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px, 400px)) !important;
+        justify-content: center;
+        gap: 24px;
+}
+
+.profile-pic {
+        width: 125px !important;
+        height: 125px !important;
+        border-radius: 50%;
+        border: 2px solid var(--primary);
+}
+.social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        color: var(--text);
+        text-decoration: none;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        font-size: 18px;
+        transition: all 0.2s ease;
+}
+.role-heading {
+        font-family: 'cyba-45', 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 4vh;
+}
+.social {
+        margin-top: 2vh;
+        display: flex;
+        gap: 12px;
+}
+.social img {
+        width: 30px;
+        height: 30px;
+}
+.m-name {
+        font-size: 2.3vh;
+        margin-top: 2vh;
+}
+.roles {
+        font-size: 1.5vh;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+        .member-container {
+                grid-template-columns: repeat(
+                        2,
+                        minmax(260px, 400px)
+                );
+        }
+
+        .lead {
+                grid-template-columns: repeat(
+                        2,
+                        minmax(260px, 400px)
+                ) !important;
+        }
+
+        .work-item {
+                grid-template-columns: 50px 1fr;
+                gap: 2rem;
+                margin: 8vh 2vw;
+        }
+
+        .work-info {
+                grid-column: 2;
+        }
+}
+
+@media (max-width: 700px) {
+        nav {
+                padding: 1rem 4%;
+        }
+
+        .nav-links {
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+        }
+
+        .team,
+        .notable-work {
+                width: 92%;
+                margin-top: 10vh;
+        }
+
+        .section-heading {
+                margin-bottom: 5vh;
+        }
+
+        .section-heading span {
+                font-size: 0.8rem;
+        }
+
+        .section-heading h2 {
+                font-size: clamp(2rem, 10vw, 4rem);
+        }
+
+        .role-heading {
+                font-size: clamp(1.5rem, 7vw, 2.5rem);
+        }
+
+        .member-container,
+        .lead {
+                grid-template-columns: minmax(260px, 400px) !important;
+                justify-content: center;
+        }
+
+        .member {
+                padding: 24px;
+        }
+
+        .profile-pic {
+                width: 110px !important;
+                height: 110px !important;
+        }
+
+        .m-name {
+                font-size: 1rem;
+        }
+
+        .roles {
+                font-size: 0.75rem;
+        }
+
+        .areas {
+                font-size: 11px;
+        }
+
+        .work-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin: 6vh 0;
+                padding: 2rem;
+        }
+
+        .work-number {
+                font-size: 1.5rem;
+        }
+
+        .work-info {
+                grid-column: auto;
+        }
+
+        .work-info h3 {
+                font-size: clamp(1.8rem, 9vw, 3rem);
+        }
+
+        .work-info p {
+                max-width: none;
+        }
+
+        footer {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                text-align: center;
+        }
+
+        footer .copyright,
+        footer a {
+                margin: 0;
+        }
+}
+
+@media (max-width: 450px) {
+        .nav-links {
+                gap: 0.7rem;
+                font-size: 0.8rem;
+        }
+
+        .team,
+        .notable-work {
+                width: 94%;
+        }
+
+        .member-container,
+        .lead {
+                grid-template-columns: minmax(0, 1fr) !important;
+        }
+
+        .member {
+                padding: 20px 16px;
+        }
+
+        .profile-pic {
+                width: 95px !important;
+                height: 95px !important;
+        }
+
+        .areas {
+                gap: 6px;
+        }
+
+        .social a {
+                width: 34px;
+                height: 34px;
+        }
+
+        .social img {
+                width: 26px;
+                height: 26px;
+        }
+
+        .work-item {
+                padding: 1.5rem;
+        }
 }
