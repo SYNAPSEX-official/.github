@@ -262,6 +262,7 @@ footer a {
         height: 125px !important;
         border-radius: 50%;
         border: 2px solid var(--primary);
+        object-fit: cover;
 }
 .social a {
         display: flex;
@@ -297,6 +298,17 @@ footer a {
 }
 .roles {
         font-size: 1.5vh;
+}
+
+
+.social-media {
+        margin-right: 10vw;
+}
+.social-media img{
+        width: 100px;
+        height: 100px;
+        user-select: none;
+        padding: 10px;
 }
 
 /* RESPONSIVE */
