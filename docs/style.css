@@ -227,6 +227,7 @@ footer a {
         justify-content: center;
         gap: 24px;
         margin-top: 4vh;
+        padding: 3vh;
 }
 .member {
         display: flex;
