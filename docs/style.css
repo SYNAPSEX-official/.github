@@ -248,6 +248,7 @@ footer a {
         margin-top: 16px;
         font-size: 12px;
 }
+
 .areas span::before {
         content: "▸ ";
 }
